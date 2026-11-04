@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Optim-VET — clinică veterinară în Ciocana, Chișinău</title>
+<meta name="description" content="Clinică veterinară în sectorul Ciocana: tomografie computerizată, radiografie digitală, ecografie, laborator propriu, chirurgie cu anestezie inhalatorie, staționar și izolator. Bd. Mircea cel Bătrân 34/6.">
+<meta name="theme-color" content="#14211d">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Optim-VET — clinică veterinară în Ciocana">
+<meta property="og:description" content="Tomograf, laborator și staționar sub același acoperiș. Chișinău, bd. Mircea cel Bătrân 34/6.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2314211d'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23e6efe8' stroke-width='2.4'/%3E%3Cpath d='M16 10v12M10 16h12' stroke='%23e2522f' stroke-width='2.4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Onest:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VeterinaryCare",
+  "name": "Optim-VET",
+  "legalName": "S.R.L. OPTIM-VET",
+  "telephone": "+37378150263",
+  "email": "optimvet@yahoo.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "bd. Mircea cel Bătrân 34/6",
+    "addressLocality": "Chișinău",
+    "postalCode": "MD-2075",
+    "addressCountry": "MD"
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "22:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "08:00", "closes": "16:00"}
+  ]
+}
+</script>
+<style>
+:root{
+  --bone:#f2eee6;
+  --paper:#faf8f3;
+  --ink:#14211d;
+  --ink-2:#4b5853;
+  --ink-3:#7d8782;
+  --line:rgba(20,33,29,.14);
+  --line-strong:rgba(20,33,29,.32);
+  --mint:#d4e6da;
+  --mint-2:#9fc2ad;
+  --signal:#e2522f;
+  --signal-dark:#c13f1f;
+  --display:"Spectral",Georgia,serif;
+  --body:"Onest",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+  --wrap:1200px;
+  --gut:20px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bone);color:var(--ink);font:400 16px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img,svg{display:block}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+::selection{background:var(--ink);color:var(--bone)}
+:focus-visible{outline:2px solid var(--signal);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+@media (min-width:768px){:root{--gut:32px}}
+
+.label{font:500 11.5px/1.3 var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+.h2{font:500 clamp(1.9rem,3.8vw,3.1rem)/1.08 var(--display);letter-spacing:-.015em;margin:.5rem 0 0}
+.lead{color:var(--ink-2);max-width:34rem;margin:1rem 0 0}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;padding:.95rem 1.4rem;border-radius:999px;border:1px solid transparent;font-weight:600;font-size:15px;text-decoration:none;cursor:pointer;transition:background .2s,color .2s,border-color .2s,transform .2s}
+.btn:active{transform:translateY(1px)}
+.btn-ink{background:var(--ink);color:var(--bone)}
+.btn-ink:hover{background:#25382f}
+.btn-line{border-color:var(--line-strong);background:transparent}
+.btn-line:hover{border-color:var(--ink);background:var(--paper)}
+.btn-signal{background:var(--signal);color:#fff}
+.btn-signal:hover{background:var(--signal-dark)}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:50;background:rgba(242,238,230,.88);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--line)}
+.hdr .wrap{display:flex;align-items:center;gap:24px;height:68px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;margin-right:auto}
+.logo-mark{width:34px;height:34px}
+.logo-word{font:600 16px/1 var(--body);letter-spacing:.02em}
+.logo-word span{color:var(--signal)}
+.nav{display:none;gap:26px;font-size:14.5px;font-weight:500}
+.nav a{text-decoration:none;color:var(--ink-2);transition:color .2s}
+.nav a:hover{color:var(--ink)}
+.status{display:none;align-items:center;gap:8px;font:500 12px/1 var(--mono);color:var(--ink-2);white-space:nowrap}
+.status i{width:7px;height:7px;border-radius:50%;background:var(--ink-3)}
+.status.open i{background:#2f9e5b;box-shadow:0 0 0 4px rgba(47,158,91,.15)}
+.lang{display:flex;border:1px solid var(--line-strong);border-radius:999px;padding:2px}
+.lang button{border:0;background:none;padding:5px 10px;border-radius:999px;font:500 12px/1 var(--mono);cursor:pointer;color:var(--ink-2)}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bone)}
+.hdr-call{display:none;padding:.7rem 1.1rem;font-size:14px}
+@media (min-width:1080px){.nav{display:flex}}
+@media (min-width:768px){.hdr-call{display:inline-flex}.status{display:flex}}
+
+/* hero */
+.hero{padding:48px 0 0}
+.hero-grid{display:grid;gap:40px}
+.hero h1{font:500 clamp(2.4rem,6vw,4.9rem)/1.02 var(--display);letter-spacing:-.02em;margin:18px 0 0}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--signal-dark)}
+.hero .lead{font-size:clamp(1rem,1.4vw,1.15rem);margin-top:22px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.hero-meta{display:grid;grid-template-columns:1fr;border-top:1px solid var(--line);margin-top:48px}
+.hero-meta > div{padding:16px 0;border-bottom:1px solid var(--line)}
+.hero-meta b{display:block;font-weight:600;font-size:15px;margin-top:4px}
+.stars{display:inline-flex;gap:2px;vertical-align:-2px;margin-left:6px}
+.stars svg{width:13px;height:13px;fill:var(--signal)}
+@media (min-width:640px){
+  .hero-meta{grid-template-columns:repeat(3,1fr)}
+  .hero-meta > div{padding:18px 20px 18px 0;border-bottom:0}
+  .hero-meta > div + div{padding-left:20px;border-left:1px solid var(--line)}
+}
+@media (min-width:980px){
+  .hero{padding-top:72px}
+  .hero-grid{grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+}
+
+/* scan panel */
+.scan{position:relative;background:var(--ink);color:var(--mint);border-radius:8px;aspect-ratio:1/1;overflow:hidden;max-width:520px;width:100%;justify-self:center}
+.scan svg.view{position:absolute;inset:0;width:100%;height:100%}
+.scan .tag{position:absolute;font:500 10.5px/1.4 var(--mono);letter-spacing:.08em;color:rgba(212,230,218,.62);text-transform:uppercase}
+.scan .tl{top:16px;left:18px}.scan .tr{top:16px;right:18px;text-align:right}
+.scan .bl{bottom:16px;left:18px}.scan .br{bottom:16px;right:18px;text-align:right}
+.scan .tag strong{color:var(--mint);font-weight:500}
+.sweep{animation:sweep 5.5s cubic-bezier(.45,0,.55,1) infinite alternate}
+@keyframes sweep{from{transform:translateY(-150px)}to{transform:translateY(150px)}}
+@media (prefers-reduced-motion:reduce){.sweep{animation:none}html{scroll-behavior:auto}}
+
+/* strip */
+.strip{margin-top:64px;background:var(--ink);color:var(--bone)}
+.strip ul{list-style:none;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px 34px;padding-top:18px;padding-bottom:18px;font:500 12px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.strip li{display:flex;align-items:center;gap:10px}
+.strip li::before{content:"";width:6px;height:6px;background:var(--signal);border-radius:1px}
+
+section{scroll-margin-top:72px}
+.sec{padding:88px 0}
+@media (min-width:980px){.sec{padding:120px 0}}
+
+/* capabilities */
+.cap-grid{display:grid;gap:40px}
+@media (min-width:980px){.cap-grid{grid-template-columns:.8fr 1.2fr;gap:64px}.cap-head{position:sticky;top:110px;align-self:start}}
+.cap-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line-strong)}
+.cap{display:grid;grid-template-columns:64px 1fr;gap:4px 18px;padding:26px 0;border-bottom:1px solid var(--line)}
+.cap code{font:500 12px/1 var(--mono);letter-spacing:.06em;color:var(--signal);padding-top:7px}
+.cap h3{font:500 clamp(1.3rem,2vw,1.6rem)/1.2 var(--display);letter-spacing:-.005em;margin:0}
+.cap p{grid-column:2;margin:6px 0 0;color:var(--ink-2);max-width:36rem}
+@media (min-width:640px){.cap{grid-template-columns:90px 1fr}}
+
+/* prices */
+.prices{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.pr-head{display:grid;gap:18px;margin-bottom:48px}
+@media (min-width:980px){.pr-head{grid-template-columns:1fr 1fr;align-items:end}.pr-head .lead{justify-self:end;margin:0}}
+.pr-groups{display:grid;gap:44px}
+@media (min-width:900px){.pr-groups{grid-template-columns:1fr 1fr;gap:48px 64px}}
+.pr-group h3{margin:0 0 6px;font:500 11.5px/1 var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+.pr-group ul{list-style:none;margin:0;padding:0}
+.pr{display:flex;align-items:baseline;gap:10px;padding:16px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.pr-name{flex:1 1 220px;font-weight:500}
+.pr-val{font:500 15px/1.2 var(--mono);white-space:nowrap}
+.pr-val small{font-size:12px;color:var(--ink-3)}
+.pr-book{border:0;background:none;padding:0;font-size:13px;font-weight:600;color:var(--signal-dark);cursor:pointer;flex-basis:100%;text-align:left;margin-top:-2px}
+.pr-book:hover{text-decoration:underline}
+@media (min-width:640px){.pr-book{flex-basis:auto;margin:0 0 0 14px;opacity:.0;transition:opacity .2s}.pr:hover .pr-book,.pr-book:focus-visible{opacity:1}}
+@media (hover:none){.pr-book{opacity:1}}
+
+/* prep */
+.prep-grid{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:48px;border-radius:8px;overflow:hidden}
+@media (min-width:768px){.prep-grid{grid-template-columns:1fr 1fr}}
+.prep{background:var(--bone);padding:28px 26px 30px;display:grid;grid-template-columns:22px 1fr;gap:6px 16px}
+.prep .box{width:18px;height:18px;border:1.5px solid var(--ink);border-radius:3px;margin-top:-2px;grid-row:1 / span 3;grid-column:1}
+.prep h3{grid-column:2;margin:0;font-size:17px;font-weight:600;line-height:1.35}
+.prep p{grid-column:2;margin:4px 0 0;color:var(--ink-2)}
+.prep .label{grid-column:2;margin-bottom:6px}
+
+/* urgent */
+.urgent{background:var(--signal);color:#fff}
+.urgent .wrap{display:grid;gap:22px;padding-top:44px;padding-bottom:44px}
+.urgent h2{font:500 clamp(1.7rem,3vw,2.4rem)/1.1 var(--display);letter-spacing:-.01em;margin:0}
+.urgent p{margin:8px 0 0;opacity:.92;max-width:34rem}
+.urgent a.big{font:500 clamp(1.8rem,4vw,3rem)/1 var(--display);letter-spacing:-.01em;text-decoration:none;white-space:nowrap;border-bottom:2px solid rgba(255,255,255,.5);padding-bottom:6px;justify-self:start}
+.urgent a.big:hover{border-color:#fff}
+@media (min-width:900px){.urgent .wrap{grid-template-columns:1fr auto;align-items:center}}
+
+/* reviews */
+.reviews{background:var(--ink);color:var(--bone)}
+.reviews .label{color:rgba(242,238,230,.55)}
+.rv-head{display:grid;gap:28px;margin-bottom:56px}
+@media (min-width:900px){.rv-head{grid-template-columns:1fr auto;align-items:end}}
+.score{display:flex;align-items:center;gap:18px}
+.score b{font:500 72px/1 var(--display);letter-spacing:-.02em}
+.score span{font-size:14px;color:rgba(242,238,230,.7);line-height:1.45}
+.score .stars svg{fill:var(--signal);width:15px;height:15px}
+.rv-grid{display:grid;gap:20px}
+@media (min-width:900px){.rv-grid{grid-template-columns:repeat(3,1fr)}}
+.quote{margin:0;padding:28px;border:1px solid rgba(242,238,230,.16);border-radius:8px;display:flex;flex-direction:column;gap:24px}
+.quote blockquote{margin:0;font:400 19px/1.5 var(--display)}
+.quote blockquote::before{content:"“";display:block;font:400 60px/0.55 var(--display);color:var(--signal);margin-bottom:14px}
+.quote figcaption{margin-top:auto;display:flex;justify-content:space-between;gap:12px;font:500 11.5px/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:rgba(242,238,230,.55);padding-top:16px;border-top:1px solid rgba(242,238,230,.12)}
+
+/* booking */
+.book-grid{display:grid;gap:56px}
+@media (min-width:980px){.book-grid{grid-template-columns:1.1fr .9fr;gap:72px}}
+.form{margin-top:36px;display:grid;gap:18px}
+.row2{display:grid;gap:18px}
+@media (min-width:640px){.row2{grid-template-columns:1fr 1fr}}
+.field label{display:block;font:500 11.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);margin-bottom:8px}
+.field input,.field select,.field textarea{width:100%;background:var(--paper);border:1px solid var(--line-strong);border-radius:6px;padding:13px 14px;font-size:16px;transition:border-color .2s,box-shadow .2s;appearance:none;-webkit-appearance:none}
+.field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%2314211d' stroke-width='1.6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:38px}
+.field textarea{resize:vertical;min-height:110px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--ink);box-shadow:0 0 0 3px rgba(20,33,29,.1)}
+.field.err input{border-color:var(--signal)}
+.form-foot{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;margin-top:6px}
+.form-foot small{color:var(--ink-3);font-size:13px;max-width:22rem}
+
+.contact{border-top:1px solid var(--line-strong)}
+.ci{padding:22px 0;border-bottom:1px solid var(--line)}
+.ci .label{margin-bottom:8px}
+.ci a{text-decoration:none}
+.ci a:hover{text-decoration:underline}
+.ci .tel{font:500 clamp(1.6rem,2.6vw,2.1rem)/1.1 var(--display);letter-spacing:-.01em}
+.hours{width:100%;border-collapse:collapse}
+.hours td{padding:6px 0}
+.hours td:last-child{text-align:right;font-family:var(--mono);font-size:14.5px}
+.hours tr.today td{font-weight:600}
+.hours tr.today td:first-child::after{content:attr(data-today);margin-left:10px;font:500 10.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;background:var(--ink);color:var(--bone);padding:3px 6px;border-radius:3px;vertical-align:2px}
+
+.map{margin-top:72px;position:relative;border-radius:8px;overflow:hidden;border:1px solid var(--line);background:#dcd8cf;height:380px}
+.map iframe{width:100%;height:100%;border:0;filter:grayscale(1) contrast(1.05) sepia(.12);display:block}
+.map a{position:absolute;left:16px;bottom:16px}
+
+/* footer */
+.ftr{background:var(--ink);color:rgba(242,238,230,.62);font-size:13.5px}
+.ftr .wrap{display:grid;gap:20px;padding-top:40px;padding-bottom:40px}
+.ftr strong{color:var(--bone);font-weight:600}
+.ftr a{text-decoration:none}.ftr a:hover{color:var(--bone)}
+@media (min-width:768px){.ftr .wrap{grid-template-columns:1fr auto;align-items:center}}
+
+/* mobile bar */
+.concept{background:var(--ink);color:var(--mint);font:500 11.5px/1.45 var(--mono);letter-spacing:.04em;text-align:center;padding:8px 0}
+.concept b{color:#fff;font-weight:500}
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(242,238,230,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+.mbar .btn{padding:.8rem 1rem}
+@media (min-width:768px){.mbar{display:none}}
+@media (max-width:767px){body{padding-bottom:76px}}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<div class="concept"><div class="wrap" data-i18n="concept"><b>Concept de site</b> pregătit pentru Optim-VET · nu este site-ul oficial al clinicii</div></div>
+
+<header class="hdr">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Optim-VET">
+      <svg class="logo-mark" viewBox="0 0 34 34" aria-hidden="true">
+        <rect width="34" height="34" rx="7" fill="#14211d"/>
+        <circle cx="17" cy="17" r="9.5" fill="none" stroke="#d4e6da" stroke-width="2.2"/>
+        <path d="M17 10.5v13M10.5 17h13" stroke="#e2522f" stroke-width="2.4"/>
+      </svg>
+      <span class="logo-word">OPTIM<span>·</span>VET</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#clinica" data-i18n="nav_clinic">Clinica</a>
+      <a href="#preturi" data-i18n="nav_prices">Prețuri</a>
+      <a href="#pregatire" data-i18n="nav_prep">Pregătire</a>
+      <a href="#recenzii" data-i18n="nav_reviews">Recenzii</a>
+      <a href="#contacte" data-i18n="nav_contacts">Contacte</a>
+    </nav>
+    <div class="status" id="status" aria-live="polite"><i></i><span></span></div>
+    <div class="lang" role="group" aria-label="Limba / Язык">
+      <button type="button" data-lang="ro" aria-pressed="true">RO</button>
+      <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+    </div>
+    <a class="btn btn-ink hdr-call" href="tel:+37378150263">078 150 263</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="rv">
+          <div class="label" data-i18n="hero_eyebrow">Clinică veterinară · Ciocana, Chișinău</div>
+          <h1 data-i18n="hero_title">Tomograf, laborator și staționar — <em>sub același acoperiș.</em></h1>
+          <p class="lead" data-i18n="hero_lead">Investigațiile se fac pe loc, ca diagnosticul să nu aștepte. Primim câini, pisici și alte animale de companie.</p>
+          <div class="hero-cta">
+            <a href="#programare" class="btn btn-ink">
+              <span data-i18n="cta_book">Programează o vizită</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="tel:+37378150263" class="btn btn-line">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+              078 150 263
+            </a>
+          </div>
+        </div>
+
+        <div class="scan rv" aria-hidden="true">
+          <svg class="view" viewBox="0 0 400 400">
+            <defs>
+              <g id="paw">
+                <path d="M200 196c40 0 74 38 72 66-2 28-31 31-50 25-12-4-32-4-44 0-19 6-48 3-50-25-2-28 32-66 72-66z"/>
+                <ellipse cx="139" cy="168" rx="21" ry="29" transform="rotate(-22 139 168)"/>
+                <ellipse cx="178" cy="130" rx="21" ry="29" transform="rotate(-6 178 130)"/>
+                <ellipse cx="222" cy="130" rx="21" ry="29" transform="rotate(6 222 130)"/>
+                <ellipse cx="261" cy="168" rx="21" ry="29" transform="rotate(22 261 168)"/>
+              </g>
+              <clipPath id="disc"><circle cx="200" cy="205" r="150"/></clipPath>
+              <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#e2522f" stop-opacity="0"/>
+                <stop offset=".5" stop-color="#e2522f" stop-opacity=".22"/>
+                <stop offset="1" stop-color="#e2522f" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <circle cx="200" cy="205" r="172" fill="none" stroke="#d4e6da" stroke-opacity=".35" stroke-width="7" stroke-dasharray="1.2 7.8"/>
+            <circle cx="200" cy="205" r="172" fill="none" stroke="#d4e6da" stroke-opacity=".7" stroke-width="12" stroke-dasharray="1.6 88.4"/>
+            <circle cx="200" cy="205" r="150" fill="#1b2c27"/>
+            <g clip-path="url(#disc)">
+              <g transform="translate(0 12)" fill="none" stroke="#d4e6da">
+                <use href="#paw" stroke-width="44" stroke-opacity=".05"/>
+                <use href="#paw" stroke-width="30" stroke-opacity=".08"/>
+                <use href="#paw" stroke-width="16" stroke-opacity=".14"/>
+              </g>
+              <g transform="translate(0 12)"><use href="#paw" fill="#d4e6da" fill-opacity=".9"/></g>
+              <g class="sweep"><rect x="40" y="175" width="320" height="60" fill="url(#beam)"/><rect x="40" y="204.5" width="320" height="1" fill="#e2522f"/></g>
+            </g>
+            <path d="M200 40v26M200 344v26M35 205h26M339 205h26" stroke="#e2522f" stroke-width="1.5"/>
+            <circle cx="200" cy="205" r="150" fill="none" stroke="#d4e6da" stroke-opacity=".25"/>
+          </svg>
+          <div class="tag tl"><strong>OPTIM·VET</strong><br>CT · AXIAL</div>
+          <div class="tag tr">SL 042 / 128<br>2.0 mm</div>
+          <div class="tag bl">120 kV<br>200 mA</div>
+          <div class="tag br">W 400<br>L 40</div>
+        </div>
+      </div>
+
+      <div class="hero-meta rv">
+        <div>
+          <span class="label">Google Maps</span>
+          <b>4,6 <span class="stars" aria-label="4.6 / 5"><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg></span> · <span data-i18n="meta_reviews">660+ recenzii</span></b>
+        </div>
+        <div>
+          <span class="label" data-i18n="meta_addr_l">Adresa</span>
+          <b data-i18n="meta_addr">bd. Mircea cel Bătrân 34/6</b>
+        </div>
+        <div>
+          <span class="label" data-i18n="meta_hours_l">Program</span>
+          <b data-i18n="meta_hours">Lu–Vi 08–22 · Sâ–Du 08–16:00</b>
+        </div>
+      </div>
+    </div>
+
+    <div class="strip">
+      <ul class="wrap">
+        <li data-i18n="strip_1">Tomografie computerizată</li>
+        <li data-i18n="strip_2">Laborator propriu</li>
+        <li data-i18n="strip_3">Anestezie inhalatorie</li>
+        <li data-i18n="strip_4">Staționar și izolator</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="clinica" class="sec">
+    <div class="wrap cap-grid">
+      <div class="cap-head rv">
+        <div class="label" data-i18n="cap_l">Clinica</div>
+        <h2 class="h2" data-i18n="cap_title">Ce avem în clinică</h2>
+        <p class="lead" data-i18n="cap_lead">Aparatura de care depinde un diagnostic corect. Fără trimiteri în altă parte și fără drumuri în plus pentru animal.</p>
+      </div>
+      <ul class="cap-list">
+        <li class="cap rv"><code>CT</code><h3 data-i18n="c1_t">Tomografie computerizată</h3><p data-i18n="c1_d">Imagini în secțiuni pentru coloană, cap, torace și cazuri oncologice. Se face sub anestezie, cu monitorizare.</p></li>
+        <li class="cap rv"><code>RX</code><h3 data-i18n="c2_t">Radiografie digitală</h3><p data-i18n="c2_d">Imaginea e gata în câteva minute: fracturi, articulații, plămâni, corpi străini.</p></li>
+        <li class="cap rv"><code>USG</code><h3 data-i18n="c3_t">Ecografie</h3><p data-i18n="c3_d">Abdomen, vezică urinară, gestație. Primiți concluzia în scris.</p></li>
+        <li class="cap rv"><code>LAB</code><h3 data-i18n="c4_t">Laborator propriu</h3><p data-i18n="c4_d">Hemoleucogramă, biochimie, frotiu pentru babesioză. Rezultatul — în 15–30 de minute, cât sunteți încă la consult.</p></li>
+        <li class="cap rv"><code>OR</code><h3 data-i18n="c5_t">Chirurgie cu anestezie inhalatorie</h3><p data-i18n="c5_d">Trezire mai rapidă și mai blândă, inclusiv pentru animalele în vârstă și rasele brahicefale.</p></li>
+        <li class="cap rv"><code>ICU</code><h3 data-i18n="c6_t">Staționar și izolator</h3><p data-i18n="c6_d">Terapie intensivă, perfuzii, oxigen. Pacienții cu parvoviroză sau panleucopenie stau separat, în boxe izolate.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="preturi" class="sec prices">
+    <div class="wrap">
+      <div class="pr-head rv">
+        <div>
+          <div class="label" data-i18n="pr_l">Prețuri</div>
+          <h2 class="h2" data-i18n="pr_title">Prețuri orientative</h2>
+        </div>
+        <p class="lead" data-i18n="pr_lead">Costul final depinde de greutatea animalului și de ce arată consultul. Lista completă — la recepție.</p>
+      </div>
+      <div class="pr-groups" id="prices"></div>
+    </div>
+  </section>
+
+  <section id="pregatire" class="sec">
+    <div class="wrap">
+      <div class="rv">
+        <div class="label" data-i18n="pp_l">Înainte de vizită</div>
+        <h2 class="h2" data-i18n="pp_title">Cum pregătiți animalul</h2>
+        <p class="lead" data-i18n="pp_lead">Patru lucruri simple, ca analizele și imaginile să iasă corecte din prima.</p>
+      </div>
+      <div class="prep-grid rv">
+        <div class="prep"><span class="box"></span><span class="label" data-i18n="p1_l">Analize · CT · operație</span><h3 data-i18n="p1_t">Fără mâncare 8–12 ore</h3><p data-i18n="p1_d">Apa se poate, până cu 2 ore înainte de procedură.</p></div>
+        <div class="prep"><span class="box"></span><span class="label" data-i18n="p2_l">Ecografie</span><h3 data-i18n="p2_t">Vezica urinară plină</h3><p data-i18n="p2_d">Nu plimbați câinele cu 3–4 ore înainte de ecografie.</p></div>
+        <div class="prep"><span class="box"></span><span class="label" data-i18n="p3_l">Documente</span><h3 data-i18n="p3_t">Carnetul veterinar</h3><p data-i18n="p3_d">Și rezultatele analizelor sau imaginilor anterioare, dacă le aveți.</p></div>
+        <div class="prep"><span class="box"></span><span class="label" data-i18n="p4_l">Siguranță</span><h3 data-i18n="p4_t">Cușcă sau lesă</h3><p data-i18n="p4_d">Pisicile — în cușcă de transport, câinii — în lesă. Primim cu programare.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="urgent">
+    <div class="wrap">
+      <div>
+        <h2 data-i18n="urg_t">Caz urgent?</h2>
+        <p data-i18n="urg_d">Sunați în drum spre clinică — echipa se pregătește până ajungeți.</p>
+      </div>
+      <a class="big" href="tel:+37378150263">078 150 263</a>
+    </div>
+  </section>
+
+  <section id="recenzii" class="sec reviews">
+    <div class="wrap">
+      <div class="rv-head rv">
+        <div>
+          <div class="label" data-i18n="rv_l">Recenzii</div>
+          <h2 class="h2" data-i18n="rv_title">Ce spun stăpânii</h2>
+        </div>
+        <div class="score">
+          <b>4,6</b>
+          <span><span class="stars"><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg><svg viewBox="0 0 20 20" style="opacity:.45"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></svg></span><br><span data-i18n="rv_score">peste 660 de recenzii pe Google</span></span>
+        </div>
+      </div>
+      <div class="rv-grid">
+        <figure class="quote rv">
+          <blockquote data-i18n="q1">După un diagnostic greșit în altă clinică am ajuns de urgență la Optim-Vet, unde Roza, de 11 ani, a fost diagnosticată cu babesioză. Mulțumim din suflet pentru grijă și profesionalism.</blockquote>
+          <figcaption><span data-i18n="q1_a">Despre Roza, 11 ani</span><span>Google</span></figcaption>
+        </figure>
+        <figure class="quote rv">
+          <blockquote data-i18n="q2">Avea nevoie de o examinare tomografică foarte specifică, pe care am putut-o face aici — cu echipament bun și o abordare atentă.</blockquote>
+          <figcaption><span data-i18n="q2_a">Tomografie</span><span>Google</span></figcaption>
+        </figure>
+        <figure class="quote rv">
+          <blockquote data-i18n="q3">Veterinari cu experiență, amabili și pregătiți pentru cazuri complexe. Oameni calzi, preocupați cu adevărat de animalele noastre.</blockquote>
+          <figcaption><span>Iuliania Martiniuc</span><span>Lista.md</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="programare" class="sec">
+    <div class="wrap">
+      <div class="book-grid">
+        <div class="rv">
+          <div class="label" data-i18n="bk_l">Programare</div>
+          <h2 class="h2" data-i18n="bk_title">Programați o vizită</h2>
+          <p class="lead" data-i18n="bk_lead">Completați formularul și trimiteți-l pe WhatsApp — recepția vă răspunde și confirmă ora. Sau sunați direct.</p>
+
+          <form class="form" id="form" novalidate>
+            <div class="row2">
+              <div class="field"><label for="f-name" data-i18n="f_name">Numele</label><input id="f-name" name="name" autocomplete="name" required></div>
+              <div class="field"><label for="f-phone" data-i18n="f_phone">Telefonul</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="0__ ___ ___" required></div>
+            </div>
+            <div class="row2">
+              <div class="field"><label for="f-pet" data-i18n="f_pet">Animalul</label>
+                <select id="f-pet" name="pet">
+                  <option value="dog" data-i18n="o_dog">Câine</option>
+                  <option value="cat" data-i18n="o_cat">Pisică</option>
+                  <option value="other" data-i18n="o_other">Alt animal</option>
+                </select>
+              </div>
+              <div class="field"><label for="f-reason" data-i18n="f_reason">Motivul</label>
+                <select id="f-reason" name="reason">
+                  <option value="consult" data-i18n="r_consult">Consultație</option>
+                  <option value="lab" data-i18n="r_lab">Analize</option>
+                  <option value="usg" data-i18n="r_usg">Ecografie</option>
+                  <option value="xray" data-i18n="r_xray">Radiografie</option>
+                  <option value="ct" data-i18n="r_ct">Tomografie (CT)</option>
+                  <option value="surgery" data-i18n="r_surgery">Operație / sterilizare</option>
+                  <option value="vaccine" data-i18n="r_vaccine">Vaccinare</option>
+                  <option value="hosp" data-i18n="r_hosp">Staționar</option>
+                  <option value="other" data-i18n="r_other">Altceva</option>
+                </select>
+              </div>
+            </div>
+            <div class="field"><label for="f-msg" data-i18n="f_msg">Ce s-a întâmplat (opțional)</label><textarea id="f-msg" name="msg" data-i18n-ph="f_msg_ph" placeholder="Vârsta, greutatea, simptomele, ziua dorită"></textarea></div>
+            <div class="form-foot">
+              <button class="btn btn-ink" type="submit">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>
+                <span data-i18n="f_send">Trimite pe WhatsApp</span>
+              </button>
+              <small data-i18n="f_note">Datele nu se salvează pe site — ajung doar în conversația cu recepția.</small>
+            </div>
+          </form>
+        </div>
+
+        <div id="contacte" class="rv">
+          <div class="label" data-i18n="ct_l">Contacte</div>
+          <h2 class="h2" data-i18n="ct_title">Cum ne găsiți</h2>
+          <div class="contact" style="margin-top:36px">
+            <div class="ci"><div class="label" data-i18n="ct_phone">Recepție și programări</div><a class="tel" href="tel:+37378150263">+373 78 150 263</a></div>
+            <div class="ci"><div class="label" data-i18n="ct_addr">Adresa</div><span data-i18n="ct_addr_v">Chișinău, sect. Ciocana,<br>bd. Mircea cel Bătrân 34/6, MD-2075</span></div>
+            <div class="ci"><div class="label">E-mail</div><a href="mailto:optimvet@yahoo.com">optimvet@yahoo.com</a></div>
+            <div class="ci"><div class="label">Instagram · Facebook</div><a href="https://www.instagram.com/clinica_veterinara_optimvet/" target="_blank" rel="noopener">@clinica_veterinara_optimvet</a> · <a href="https://www.facebook.com/clinicaveterinaraoptimvet/" target="_blank" rel="noopener">OPTIM-VET</a></div>
+            <div class="ci"><div class="label" data-i18n="ct_hours">Program</div>
+              <table class="hours">
+                <tr data-days="wk"><td data-i18n="h_wk">Luni – Vineri</td><td>08:00 – 22:00</td></tr>
+                <tr data-days="we"><td data-i18n="h_we">Sâmbătă – Duminică</td><td>08:00 – 16:00</td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="map rv">
+        <iframe title="Optim-VET pe hartă" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Optim-VET%2C%20bd.%20Mircea%20cel%20B%C4%83tr%C3%A2n%2034%2F6%2C%20Chi%C8%99in%C4%83u&output=embed"></iframe>
+        <a class="btn btn-ink" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Optim-VET%2C%20bd.%20Mircea%20cel%20B%C4%83tr%C3%A2n%2034%2F6%2C%20Chi%C8%99in%C4%83u" data-i18n="ct_route">Traseu în Google Maps</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div>© <span id="year">2026</span> <strong>S.R.L. OPTIM-VET</strong> · IDNO 1021600022284 · <span data-i18n="ft_addr">Chișinău, bd. Mircea cel Bătrân 34/6</span></div>
+    <div><a href="tel:+37378150263">078 150 263</a> · <a href="mailto:optimvet@yahoo.com">optimvet@yahoo.com</a> · <a href="https://www.instagram.com/clinica_veterinara_optimvet/" target="_blank" rel="noopener">Instagram</a></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn btn-line" href="tel:+37378150263" data-i18n="m_call">Sunați</a>
+  <a class="btn btn-ink" href="#programare" data-i18n="m_book">Programare</a>
+</div>
+
+<script>
+(function(){
+  var PHONE = "37378150263";
+
+  var T = {
+    ro: {
+      _title:"Optim-VET — clinică veterinară în Ciocana, Chișinău",
+      concept:"<b>Concept de site</b> pregătit pentru Optim-VET · nu este site-ul oficial al clinicii",
+      nav_clinic:"Clinica", nav_prices:"Prețuri", nav_prep:"Pregătire", nav_reviews:"Recenzii", nav_contacts:"Contacte",
+      st_open:"Deschis · până la {t}", st_today:"Închis · deschidem la 08:00", st_tomorrow:"Închis · deschidem mâine la 08:00",
+      hero_eyebrow:"Clinică veterinară · Ciocana, Chișinău",
+      hero_title:"Tomograf, laborator și staționar — <em>sub același acoperiș.</em>",
+      hero_lead:"Investigațiile se fac pe loc, ca diagnosticul să nu aștepte. Primim câini, pisici și alte animale de companie.",
+      cta_book:"Programează o vizită",
+      meta_reviews:"660+ recenzii", meta_addr_l:"Adresa", meta_addr:"bd. Mircea cel Bătrân 34/6", meta_hours_l:"Program", meta_hours:"Lu–Vi 08–22 · Sâ–Du 08–16:00",
+      strip_1:"Tomografie computerizată", strip_2:"Laborator propriu", strip_3:"Anestezie inhalatorie", strip_4:"Staționar și izolator",
+      cap_l:"Clinica", cap_title:"Ce avem în clinică",
+      cap_lead:"Aparatura de care depinde un diagnostic corect. Fără trimiteri în altă parte și fără drumuri în plus pentru animal.",
+      c1_t:"Tomografie computerizată", c1_d:"Imagini în secțiuni pentru coloană, cap, torace și cazuri oncologice. Se face sub anestezie, cu monitorizare.",
+      c2_t:"Radiografie digitală", c2_d:"Imaginea e gata în câteva minute: fracturi, articulații, plămâni, corpi străini.",
+      c3_t:"Ecografie", c3_d:"Abdomen, vezică urinară, gestație. Primiți concluzia în scris.",
+      c4_t:"Laborator propriu", c4_d:"Hemoleucogramă, biochimie, frotiu pentru babesioză. Rezultatul — în 15–30 de minute, cât sunteți încă la consult.",
+      c5_t:"Chirurgie cu anestezie inhalatorie", c5_d:"Trezire mai rapidă și mai blândă, inclusiv pentru animalele în vârstă și rasele brahicefale.",
+      c6_t:"Staționar și izolator", c6_d:"Terapie intensivă, perfuzii, oxigen. Pacienții cu parvoviroză sau panleucopenie stau separat, în boxe izolate.",
+      pr_l:"Prețuri", pr_title:"Prețuri orientative",
+      pr_lead:"Costul final depinde de greutatea animalului și de ce arată consultul. Lista completă — la recepție.",
+      pr_from:"de la", pr_day:"/ zi", pr_book:"Programare →",
+      pp_l:"Înainte de vizită", pp_title:"Cum pregătiți animalul", pp_lead:"Patru lucruri simple, ca analizele și imaginile să iasă corecte din prima.",
+      p1_l:"Analize · CT · operație", p1_t:"Fără mâncare 8–12 ore", p1_d:"Apa se poate, până cu 2 ore înainte de procedură.",
+      p2_l:"Ecografie", p2_t:"Vezica urinară plină", p2_d:"Nu plimbați câinele cu 3–4 ore înainte de ecografie.",
+      p3_l:"Documente", p3_t:"Carnetul veterinar", p3_d:"Și rezultatele analizelor sau imaginilor anterioare, dacă le aveți.",
+      p4_l:"Siguranță", p4_t:"Cușcă sau lesă", p4_d:"Pisicile — în cușcă de transport, câinii — în lesă. Primim cu programare.",
+      urg_t:"Caz urgent?", urg_d:"Sunați în drum spre clinică — echipa se pregătește până ajungeți.",
+      rv_l:"Recenzii", rv_title:"Ce spun stăpânii", rv_score:"peste 660 de recenzii pe Google",
+      q1:"După un diagnostic greșit în altă clinică am ajuns de urgență la Optim-Vet, unde Roza, de 11 ani, a fost diagnosticată cu babesioză. Mulțumim din suflet pentru grijă și profesionalism.",
+      q1_a:"Despre Roza, 11 ani",
+      q2:"Avea nevoie de o examinare tomografică foarte specifică, pe care am putut-o face aici — cu echipament bun și o abordare atentă.",
+      q2_a:"Tomografie",
+      q3:"Veterinari cu experiență, amabili și pregătiți pentru cazuri complexe. Oameni calzi, preocupați cu adevărat de animalele noastre.",
+      bk_l:"Programare", bk_title:"Programați o vizită",
+      bk_lead:"Completați formularul și trimiteți-l pe WhatsApp — recepția vă răspunde și confirmă ora. Sau sunați direct.",
+      f_name:"Numele", f_phone:"Telefonul", f_pet:"Animalul", f_reason:"Motivul", f_msg:"Ce s-a întâmplat (opțional)",
+      f_msg_ph:"Vârsta, greutatea, simptomele, ziua dorită",
+      o_dog:"Câine", o_cat:"Pisică", o_other:"Alt animal",
+      r_consult:"Consultație", r_lab:"Analize", r_usg:"Ecografie", r_xray:"Radiografie", r_ct:"Tomografie (CT)", r_surgery:"Operație / sterilizare", r_vaccine:"Vaccinare", r_hosp:"Staționar", r_other:"Altceva",
+      f_send:"Trimite pe WhatsApp", f_note:"Datele nu se salvează pe site — ajung doar în conversația cu recepția.",
+      wa_hi:"Bună ziua! Aș dori o programare la Optim-VET.", wa_name:"Nume", wa_phone:"Telefon", wa_pet:"Animal", wa_reason:"Motiv", wa_msg:"Detalii",
+      ct_l:"Contacte", ct_title:"Cum ne găsiți", ct_phone:"Recepție și programări", ct_addr:"Adresa",
+      ct_addr_v:"Chișinău, sect. Ciocana,<br>bd. Mircea cel Bătrân 34/6, MD-2075", ct_hours:"Program",
+      h_wk:"Luni – Vineri", h_we:"Sâmbătă – Duminică", h_today:"azi", ct_route:"Traseu în Google Maps",
+      ft_addr:"Chișinău, bd. Mircea cel Bătrân 34/6", m_call:"Sunați", m_book:"Programare"
+    },
+    ru: {
+      _title:"Optim-VET — ветеринарная клиника на Чеканах, Кишинёв",
+      concept:"<b>Концепт сайта</b> для Optim-VET · не официальный сайт клиники",
+      nav_clinic:"Клиника", nav_prices:"Цены", nav_prep:"Подготовка", nav_reviews:"Отзывы", nav_contacts:"Контакты",
+      st_open:"Открыто · до {t}", st_today:"Закрыто · откроемся в 08:00", st_tomorrow:"Закрыто · откроемся завтра в 08:00",
+      hero_eyebrow:"Ветеринарная клиника · Чеканы, Кишинёв",
+      hero_title:"Томограф, лаборатория и стационар — <em>под одной крышей.</em>",
+      hero_lead:"Обследования проводим на месте, чтобы диагноз не ждал. Принимаем собак, кошек и других домашних животных.",
+      cta_book:"Записаться на приём",
+      meta_reviews:"660+ отзывов", meta_addr_l:"Адрес", meta_addr:"бул. Мирча чел Бэтрын 34/6", meta_hours_l:"Часы работы", meta_hours:"Пн–Пт 08–22 · Сб–Вс 08–16:00",
+      strip_1:"Компьютерная томография", strip_2:"Своя лаборатория", strip_3:"Ингаляционный наркоз", strip_4:"Стационар и изолятор",
+      cap_l:"Клиника", cap_title:"Что есть в клинике",
+      cap_lead:"Оборудование, от которого зависит точный диагноз. Без направлений в другие места и лишних поездок для животного.",
+      c1_t:"Компьютерная томография", c1_d:"Послойные снимки позвоночника, головы, грудной клетки, онкологические случаи. Проводится под наркозом с мониторингом.",
+      c2_t:"Цифровой рентген", c2_d:"Снимок готов за несколько минут: переломы, суставы, лёгкие, инородные тела.",
+      c3_t:"УЗИ", c3_d:"Брюшная полость, мочевой пузырь, беременность. Выдаём письменное заключение.",
+      c4_t:"Своя лаборатория", c4_d:"Общий анализ крови, биохимия, мазок на бабезиоз. Результат — за 15–30 минут, пока вы ещё на приёме.",
+      c5_t:"Хирургия с ингаляционным наркозом", c5_d:"Более быстрый и мягкий выход из наркоза — в том числе для пожилых животных и брахицефалов.",
+      c6_t:"Стационар и изолятор", c6_d:"Интенсивная терапия, капельницы, кислород. Пациенты с парвовирусом или панлейкопенией — отдельно, в изолированных боксах.",
+      pr_l:"Цены", pr_title:"Ориентировочные цены",
+      pr_lead:"Итоговая стоимость зависит от веса животного и результатов осмотра. Полный прайс — на ресепшене.",
+      pr_from:"от", pr_day:"/ сутки", pr_book:"Записаться →",
+      pp_l:"Перед визитом", pp_title:"Как подготовить питомца", pp_lead:"Четыре простых правила — чтобы анализы и снимки получились точными с первого раза.",
+      p1_l:"Анализы · КТ · операция", p1_t:"Не кормить 8–12 часов", p1_d:"Воду можно — до 2 часов перед процедурой.",
+      p2_l:"УЗИ", p2_t:"Наполненный мочевой пузырь", p2_d:"Не выгуливайте собаку за 3–4 часа до УЗИ.",
+      p3_l:"Документы", p3_t:"Ветеринарный паспорт", p3_d:"И результаты прошлых анализов или снимков, если они есть.",
+      p4_l:"Безопасность", p4_t:"Переноска или поводок", p4_d:"Кошек — в переноске, собак — на поводке. Приём по записи.",
+      urg_t:"Экстренный случай?", urg_d:"Позвоните по дороге в клинику — пока вы едете, команда подготовится.",
+      rv_l:"Отзывы", rv_title:"Что говорят владельцы", rv_score:"более 660 отзывов в Google",
+      q1:"После ошибочного диагноза в другой клинике мы срочно приехали в Optim-Vet, где 11-летней Розе поставили диагноз — бабезиоз. От всей души благодарим за заботу и профессионализм.",
+      q1_a:"О Розе, 11 лет",
+      q2:"Требовалось очень специфическое томографическое исследование, и мы смогли сделать его здесь — хорошее оборудование и внимательный подход.",
+      q2_a:"Томография",
+      q3:"Опытные, отзывчивые врачи, готовые к сложным случаям. Тёплые люди, которым действительно не всё равно.",
+      bk_l:"Запись", bk_title:"Запишитесь на приём",
+      bk_lead:"Заполните форму и отправьте её в WhatsApp — администратор ответит и подтвердит время. Или просто позвоните.",
+      f_name:"Имя", f_phone:"Телефон", f_pet:"Животное", f_reason:"Повод", f_msg:"Что случилось (необязательно)",
+      f_msg_ph:"Возраст, вес, симптомы, удобный день",
+      o_dog:"Собака", o_cat:"Кошка", o_other:"Другое животное",
+      r_consult:"Консультация", r_lab:"Анализы", r_usg:"УЗИ", r_xray:"Рентген", r_ct:"Томография (КТ)", r_surgery:"Операция / стерилизация", r_vaccine:"Вакцинация", r_hosp:"Стационар", r_other:"Другое",
+      f_send:"Отправить в WhatsApp", f_note:"Данные не сохраняются на сайте — они попадают только в переписку с ресепшеном.",
+      wa_hi:"Здравствуйте! Хочу записаться в Optim-VET.", wa_name:"Имя", wa_phone:"Телефон", wa_pet:"Животное", wa_reason:"Повод", wa_msg:"Подробности",
+      ct_l:"Контакты", ct_title:"Как нас найти", ct_phone:"Ресепшен и запись", ct_addr:"Адрес",
+      ct_addr_v:"Кишинёв, сект. Чеканы,<br>бул. Мирча чел Бэтрын 34/6, MD-2075", ct_hours:"Часы работы",
+      h_wk:"Понедельник – Пятница", h_we:"Суббота – Воскресенье", h_today:"сегодня", ct_route:"Маршрут в Google Maps",
+      ft_addr:"Кишинёв, бул. Мирча чел Бэтрын 34/6", m_call:"Позвонить", m_book:"Записаться"
+    }
+  };
+
+  var PRICES = [
+    {ro:"Consult și laborator", ru:"Приём и лаборатория", items:[
+      {ro:"Consultație primară, examen clinic", ru:"Первичный приём, клинический осмотр", v:"250", r:"consult"},
+      {ro:"Analize de sânge și frotiu pentru babesioză", ru:"Анализы крови и мазок на бабезиоз", v:"200–650", r:"lab"}
+    ]},
+    {ro:"Imagistică", ru:"Диагностика", items:[
+      {ro:"Radiografie digitală, 1–2 proiecții", ru:"Цифровой рентген, 1–2 проекции", v:"350–550", r:"xray"},
+      {ro:"Ecografie abdominală", ru:"УЗИ брюшной полости", v:"400", r:"usg"},
+      {ro:"Tomografie computerizată", ru:"Компьютерная томография", v:"1 800", from:1, r:"ct"}
+    ]},
+    {ro:"Chirurgie", ru:"Хирургия", items:[
+      {ro:"Sterilizare, chirurgia țesuturilor moi — cu anestezie inhalatorie", ru:"Стерилизация, мягкотканная хирургия — с ингаляционным наркозом", v:"950", from:1, r:"surgery"}
+    ]},
+    {ro:"Staționar", ru:"Стационар", items:[
+      {ro:"Terapie intensivă", ru:"Интенсивная терапия", v:"600", from:1, day:1, r:"hosp"},
+      {ro:"Boxă izolată, pacienți infecțioși", ru:"Изолированный бокс, инфекционные пациенты", v:"700", from:1, day:1, r:"hosp"}
+    ]}
+  ];
+
+  var lang = "ro";
+  try { lang = localStorage.getItem("ov_lang") || ((navigator.language||"").slice(0,2)==="ru" ? "ru" : "ro"); } catch(e){}
+  if (!T[lang]) lang = "ro";
+
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+
+  function renderPrices(){
+    var t = T[lang];
+    document.getElementById("prices").innerHTML = PRICES.map(function(g){
+      return '<div class="pr-group rv in"><h3>'+esc(g[lang])+'</h3><ul>' + g.items.map(function(it){
+        var val = (it.from ? '<small>'+t.pr_from+'</small> ' : '') + it.v.replace(" ","&nbsp;") + ' <small>MDL'+(it.day ? ' '+t.pr_day : '')+'</small>';
+        return '<li class="pr"><span class="pr-name">'+esc(it[lang])+'</span><span class="pr-val">'+val+'</span><button type="button" class="pr-book" data-reason="'+it.r+'">'+t.pr_book+'</button></li>';
+      }).join("") + '</ul></div>';
+    }).join("");
+  }
+
+  function chisinau(){
+    var p = {};
+    new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Chisinau",weekday:"short",hour:"2-digit",minute:"2-digit",hourCycle:"h23"})
+      .formatToParts(new Date()).forEach(function(x){ p[x.type]=x.value; });
+    var we = p.weekday==="Sat" || p.weekday==="Sun";
+    return {we:we, min:(+p.hour)*60 + (+p.minute)};
+  }
+
+  function renderStatus(){
+    var t = T[lang], n, el = document.getElementById("status");
+    try { n = chisinau(); } catch(e){ el.style.display="none"; return; }
+    var close = n.we ? 960 : 1320, open = 480, txt, isOpen = n.min>=open && n.min<close;
+    if (isOpen) txt = t.st_open.replace("{t}", n.we ? "16:00" : "22:00");
+    else txt = n.min < open ? t.st_today : t.st_tomorrow;
+    el.classList.toggle("open", isOpen);
+    el.querySelector("span").textContent = txt;
+    document.querySelectorAll(".hours tr").forEach(function(tr){
+      var today = (tr.getAttribute("data-days")==="we") === n.we;
+      tr.classList.toggle("today", today);
+      tr.firstElementChild.setAttribute("data-today", t.h_today);
+    });
+  }
+
+  function setLang(l){
+    lang = l;
+    var t = T[l];
+    try { localStorage.setItem("ov_lang", l); } catch(e){}
+    document.documentElement.lang = l;
+    document.title = t._title;
+    document.querySelectorAll("[data-i18n]").forEach(function(el){
+      var k = el.getAttribute("data-i18n");
+      if (t[k] != null) el.innerHTML = t[k];
+    });
+    document.querySelectorAll("[data-i18n-ph]").forEach(function(el){
+      var k = el.getAttribute("data-i18n-ph");
+      if (t[k] != null) el.placeholder = t[k];
+    });
+    document.querySelectorAll(".lang button").forEach(function(b){
+      b.setAttribute("aria-pressed", b.getAttribute("data-lang")===l ? "true" : "false");
+    });
+    renderPrices();
+    renderStatus();
+  }
+
+  document.querySelectorAll(".lang button").forEach(function(b){
+    b.addEventListener("click", function(){ setLang(b.getAttribute("data-lang")); });
+  });
+
+  document.addEventListener("click", function(e){
+    var b = e.target.closest(".pr-book");
+    if (!b) return;
+    document.getElementById("f-reason").value = b.getAttribute("data-reason");
+    document.getElementById("programare").scrollIntoView({behavior:"smooth"});
+    setTimeout(function(){ document.getElementById("f-name").focus({preventScroll:true}); }, 500);
+  });
+
+  document.getElementById("form").addEventListener("submit", function(e){
+    e.preventDefault();
+    var t = T[lang], f = e.target, ok = true;
+    ["name","phone"].forEach(function(n){
+      var inp = f.elements[n], bad = !inp.value.trim() || (n==="phone" && inp.value.replace(/\D/g,"").length < 6);
+      inp.parentNode.classList.toggle("err", bad);
+      if (bad && ok){ inp.focus(); ok = false; }
+    });
+    if (!ok) return;
+    var sel = function(n){ var s = f.elements[n]; return s.options[s.selectedIndex].text; };
+    var lines = [
+      t.wa_hi, "",
+      t.wa_name+": "+f.elements.name.value.trim(),
+      t.wa_phone+": "+f.elements.phone.value.trim(),
+      t.wa_pet+": "+sel("pet"),
+      t.wa_reason+": "+sel("reason")
+    ];
+    var msg = f.elements.msg.value.trim();
+    if (msg) lines.push(t.wa_msg+": "+msg);
+    window.open("https://wa.me/"+PHONE+"?text="+encodeURIComponent(lines.join("\n")), "_blank", "noopener");
+  });
+
+  document.querySelectorAll(".field input").forEach(function(i){
+    i.addEventListener("input", function(){ i.parentNode.classList.remove("err"); });
+  });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  setLang(lang);
+  setInterval(renderStatus, 60000);
+
+  if ("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(x){ if (x.isIntersecting){ x.target.classList.add("in"); io.unobserve(x.target); } });
+    }, {rootMargin:"0px 0px -8% 0px"});
+    document.querySelectorAll(".rv").forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll(".rv").forEach(function(el){ el.classList.add("in"); });
+  }
+})();
+</script>
+</body>
+</html>
