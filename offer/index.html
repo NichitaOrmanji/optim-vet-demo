@@ -63,6 +63,8 @@ section{margin-top:56px}
 .contact h2{margin-bottom:8px}
 .contact p{color:rgba(242,238,230,.75)}
 .contact .who{font:500 18px/1.5 var(--body);color:#fff;margin-top:14px}
+.contact .who a{text-decoration:none;border-bottom:1px solid rgba(255,255,255,.35)}
+.contact .who a:hover{border-color:#fff}
 .note{font-size:12.5px;color:var(--ink-3);margin-top:28px}
 .print-btn{border:1px solid rgba(20,33,29,.32);background:none;border-radius:999px;padding:6px 12px;font:500 12px var(--mono);cursor:pointer}
 @media print{
@@ -193,7 +195,7 @@ section{margin-top:56px}
     <div class="label" style="color:var(--mint)" data-i18n="k_contact">Контакт</div>
     <h2 data-i18n="h_contact">Обсудим?</h2>
     <p data-i18n="c_p">Напишите или позвоните — покажем концепт вживую и ответим на вопросы.</p>
-    <div class="who">[Ваше имя] · [+373 ___ ___ ___] · [Telegram / WhatsApp]</div>
+    <div class="who"><span data-i18n="who">Никита Орманжи</span> · <a href="tel:+37368028555">068 028 555</a> · <a href="https://t.me/nikita_ormanzhi" target="_blank" rel="noopener">Telegram @nikita_ormanzhi</a></div>
   </div>
 
   <p class="note" data-i18n="note">Цены, отзывы и часть данных в концепте предварительные — перед запуском всё сверяем с клиникой. Концепт закрыт от поисковых систем и не является официальным сайтом Optim-VET.</p>
@@ -232,6 +234,7 @@ var T = {
     s2:"Avans 50%. Domeniul se înregistrează pe clinică — site-ul vă aparține.",
     s3:"Facem fotografiile și finisăm site-ul. Dvs. verificați și aprobați.",
     s4:"Lansare, conectarea cererilor, restul plății.",
+    who:"Nichita Ormanji",
     k_contact:"Contact", h_contact:"Discutăm?", c_p:"Scrieți-ne sau sunați — vă arătăm conceptul și răspundem la întrebări.",
     note:"Prețurile, recenziile și o parte din date din concept sunt preliminare — înainte de lansare totul se verifică cu clinica. Conceptul este închis pentru motoarele de căutare și nu este site-ul oficial Optim-VET."
   }
