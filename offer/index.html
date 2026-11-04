@@ -260,7 +260,8 @@ try {
 } catch(e) {}
 
 var saved = null; try { saved = localStorage.getItem("ov_offer_lang"); } catch(e){}
-if (saved === "ro") setLang("ro");
+var qp = (location.search.match(/[?&]lang=(ro|ru)/) || [])[1];
+if (qp) setLang(qp); else if (saved === "ro") setLang("ro");
 </script>
 </body>
 </html>
